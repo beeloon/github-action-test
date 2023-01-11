@@ -23,3 +23,4 @@ jobs:
         run: |
           echo "${{ steps.extract_branch.outputs.branch }}"
           echo "${{ github.ref }}"
+          echo "${{ steps.extract_branch.outputs.branch }}"
