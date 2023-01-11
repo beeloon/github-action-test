@@ -24,3 +24,4 @@ jobs:
           echo "${{ steps.extract_branch.outputs.branch }}"
           echo "${{ github.ref }}"
           echo "${{ github.head_ref }}"
+          echo "${{ github.base_ref }}"
