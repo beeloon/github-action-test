@@ -14,11 +14,12 @@ jobs:
     name: Trigger manually deployment
     runs-on: ubuntu-latest
     steps:
-      - name: Branch Names
+      - name: Branch Name
         id: branch-name
         uses: tj-actions/branch-names@v6.4
       - name: Show vars
         run: |
-          echo "${{ steps.extract_branch.outputs.branch }}"
           echo "${{ github.ref }}"
+          echo "${{ steps.branch-name.outputs.current_branch }}"
+          echo "${{ steps.branch-name.outputs.current_branch }}"
           echo "${{ steps.branch-name.outputs.current_branch }}"
